@@ -7,70 +7,100 @@
 <meta name="description" content="Court filings and public record for Nejmeh v. Theriva Biologics, Inc., U.S. District Court for the District of Nevada, Case No. 3:26-cv-00705, filed September 16, 2026.">
 <style>
   :root {
-    --ink: #16181d; --ink2: #3d424d; --ink3: #6b7280; --line: #dcdfe5;
-    --panel: #f5f6f8; --bg: #ffffff; --accent: #1f3a68; --warn: #8a5a00; --warnbg: #fff7e6;
+    --bg: #e8f2fc; --card: #ffffff; --ink: #15263d; --ink2: #3a4b63; --ink3: #66768c; --line: #d6e3f1;
+    --accent: #1d5fa8; --accent-ink: #ffffff; --accentsoft: #dcebfa;
+    --warn: #9a6a00; --warnbg: #fff6e0; --shadow: 0 2px 10px rgba(29, 95, 168, .08);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --ink: #eceef2; --ink2: #c3c8d2; --ink3: #939aa7; --line: #2d323b;
-            --panel: #1a1d23; --bg: #111317; --accent: #8fb0ea; --warn: #f0c46b; --warnbg: #2a2213; }
+    :root { --bg: #0f1a28; --card: #172536; --ink: #e8eff8; --ink2: #c1cedf; --ink3: #8fa0b6; --line: #26384d;
+            --accent: #7fb4ee; --accent-ink: #0f1a28; --accentsoft: #1e3350;
+            --warn: #f0c46b; --warnbg: #2b2415; --shadow: none; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
          font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  .w { max-width: 860px; margin: 0 auto; padding: 0 20px; }
-  header { border-bottom: 1px solid var(--line); padding: 44px 0 28px; }
-  .court { font: 600 12px/1.4 ui-monospace, Menlo, Consolas, monospace; letter-spacing: .12em;
-           text-transform: uppercase; color: var(--ink3); margin: 0 0 12px; }
-  h1 { font: 700 clamp(28px, 5vw, 42px)/1.12 Georgia, "Times New Roman", serif; margin: 0 0 14px; letter-spacing: -.01em; }
+  .w { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  .card { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); padding: 28px 30px; margin: 20px 0 0; }
+  header .card { margin-top: 28px; }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 26px 0 0; }
+  .photos figure { margin: 0; }
+  .photos img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 14px; }
+  .photos figcaption { font-size: 12px; line-height: 1.4; color: var(--ink3); margin-top: 8px; text-align: center; }
+  .court { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+           color: var(--accent); background: var(--accentsoft); border-radius: 999px; padding: 4px 12px; margin: 0 0 14px; }
+  h1 { font: 700 clamp(28px, 5vw, 40px)/1.15 Georgia, "Times New Roman", serif; margin: 0 0 12px; }
   h1 i { font-weight: 400; }
-  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px 24px;
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px 20px;
           margin: 20px 0 0; padding: 0; list-style: none; }
   .meta li { font-size: 14px; color: var(--ink2); }
-  .meta b { display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); font-weight: 600; }
-  h2 { font: 700 24px/1.25 Georgia, "Times New Roman", serif; margin: 48px 0 14px; }
+  .meta b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); font-weight: 700; }
+  h2 { font: 700 23px/1.3 Georgia, "Times New Roman", serif; margin: 0 0 14px; }
+  main .card > h2:not(:first-child) { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); }
   p { margin: 0 0 14px; color: var(--ink2); }
   a { color: var(--accent); }
-  .notice { background: var(--warnbg); border-left: 4px solid var(--warn); padding: 14px 18px; margin: 28px 0 0; border-radius: 4px; }
+  .notice { background: var(--warnbg); border-left: 4px solid var(--warn); padding: 14px 18px; margin: 22px 0 0; border-radius: 10px; }
   .notice p { margin: 0; color: var(--ink); font-size: 15px; }
-  .next { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; margin: 24px 0 0; }
+  .next { background: var(--accentsoft); border-radius: 12px; padding: 16px 18px; margin: 14px 0 0; font-size: 15px; }
   .next b { color: var(--ink); }
   ol.claims { padding-left: 22px; color: var(--ink2); }
-  ol.claims li { margin: 0 0 10px; }
-  .docs { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
-  .docs li { display: flex; gap: 16px; justify-content: space-between; align-items: baseline;
-             padding: 14px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  ol.claims li { margin: 0 0 12px; }
+  .docs { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .docs li { display: flex; gap: 16px; justify-content: space-between; align-items: center; flex-wrap: wrap;
+             border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
   .docs .t { font-weight: 600; color: var(--ink); }
-  .docs .d { font-size: 14px; color: var(--ink3); }
-  .docs a.btn { white-space: nowrap; font-size: 14px; font-weight: 600; text-decoration: none;
-                border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; }
+  .docs .d { font-size: 14px; color: var(--ink3); margin-top: 4px; }
+  .docs a.btn { white-space: nowrap; font-size: 14px; font-weight: 700; text-decoration: none;
+                background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 9px 18px; }
+  .docs a.btn:hover { filter: brightness(1.08); }
   .pending { color: var(--ink3); font-style: italic; }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
   th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
-  th { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); font-weight: 600; }
+  th { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); font-weight: 700; }
   td.n { font-family: ui-monospace, Menlo, Consolas, monospace; color: var(--ink3); white-space: nowrap; }
   td.dt { white-space: nowrap; color: var(--ink3); }
   .src { columns: 2 260px; padding-left: 18px; font-size: 15px; }
   .src li { break-inside: avoid; margin: 0 0 8px; }
-  footer { border-top: 1px solid var(--line); margin: 56px 0 0; padding: 24px 0 48px; font-size: 13px; color: var(--ink3); }
+  .map { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 14px; display: block; background: var(--accentsoft); }
+  .addr { display: flex; gap: 14px 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin: 0 0 16px; }
+  .addr p { margin: 0; }
+  a.dir { white-space: nowrap; font-size: 15px; font-weight: 700; text-decoration: none;
+          background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 10px 20px; }
+  footer { padding: 28px 0 48px; font-size: 13px; color: var(--ink3); text-align: center; }
   footer p { color: var(--ink3); font-size: 13px; }
-  @media (max-width: 560px) { td.dt { white-space: normal; } .docs li { display: block; } .docs a.btn { display: inline-block; margin-top: 8px; } }
+  @media (max-width: 700px) {
+    .photos { gap: 10px; }
+    .card { padding: 22px 18px; border-radius: 16px; }
+  }
+  @media (max-width: 560px) { td.dt { white-space: normal; } .docs li { display: block; } .docs a.btn { display: inline-block; margin-top: 12px; } }
 </style>
 </head>
 <body>
 <header>
   <div class="w">
-    <p class="court">United States District Court · District of Nevada</p>
-    <h1>Nejmeh <i>v.</i> Theriva Biologics, Inc.</h1>
-    <p>A stockholder lawsuit about how Theriva Biologics (NYSE American: TOVX) sought and counted
-       stockholder approval for 16,184,560 warrant shares.</p>
-    <ul class="meta">
-      <li><b>Case number</b>3:26-cv-00705</li>
-      <li><b>Filed</b>September 16, 2026</li>
-      <li><b>District Judge</b>Anne R. Traum</li>
-      <li><b>Magistrate Judge</b>Craig S. Denney</li>
-      <li><b>Plaintiff</b>Mark Joseph Nejmeh (self-represented)</li>
-      <li><b>Defendant</b>Theriva Biologics, Inc.</li>
-    </ul>
+    <div class="card">
+        <p class="court">U.S. District Court · District of Nevada</p>
+        <h1>Nejmeh <i>v.</i> Theriva Biologics, Inc.</h1>
+        <p>A stockholder lawsuit about how Theriva Biologics (NYSE American: TOVX) sought and counted
+           stockholder approval for 16,184,560 warrant shares.</p>
+        <ul class="meta">
+          <li><b>Case number</b>3:26-cv-00705</li>
+          <li><b>Filed</b>September 16, 2026</li>
+          <li><b>District Judge</b>Anne R. Traum</li>
+          <li><b>Magistrate Judge</b>Craig S. Denney</li>
+          <li><b>Plaintiff</b>Mark Joseph Nejmeh (self-represented)</li>
+          <li><b>Defendant</b>Theriva Biologics, Inc.</li>
+        </ul>
+      <div class="photos">
+        <figure>
+          <img src="courthouse.jpg" width="480" height="640" alt="Entrance of the Bruce R. Thompson United States Courthouse and Federal Building, 400 South Virginia Street, Reno">
+          <figcaption>Bruce R. Thompson U.S. Courthouse</figcaption>
+        </figure>
+        <figure>
+          <img src="reno-virginia-street.jpg" width="480" height="640" alt="Tree-lined sidewalk outside the courthouse on South Virginia Street in Reno, with a green wayfinding sign">
+          <figcaption>Courthouse sidewalk, South Virginia Street</figcaption>
+        </figure>
+      </div>
+    </div>
     <div class="notice">
       <p><b>These are allegations.</b> The complaint and motion state the plaintiff's side of a pending case.
          No court has ruled on the merits, and Theriva has not yet filed its response. Theriva's filings
@@ -84,6 +114,7 @@
 </header>
 
 <main class="w">
+<div class="card">
   <h2>What the case is about</h2>
   <p>The plaintiff is a Theriva stockholder of about four years. The verified complaint brings two claims:</p>
   <ol class="claims">
@@ -175,6 +206,16 @@
     <li><a href="https://www.sec.gov/Archives/edgar/data/894158/000110465926041507/tm2611468d1_8k.htm">April 9, 2026 Form 8-K</a></li>
     <li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000894158&amp;type=&amp;dateb=&amp;owner=include&amp;count=40">All Theriva filings on EDGAR</a></li>
   </ul>
+
+  <h2>Where the court is</h2>
+  <div class="addr">
+    <p><b>Bruce R. Thompson U.S. Courthouse &amp; Federal Building</b><br>
+       400 South Virginia Street, Reno, Nevada 89501</p>
+    <a class="dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=400+S+Virginia+St,+Reno,+NV+89501" target="_blank" rel="noopener">Get directions</a>
+  </div>
+  <iframe class="map" title="Map of the Bruce R. Thompson U.S. Courthouse in Reno" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Bruce+R.+Thompson+U.S.+Courthouse,+400+S+Virginia+St,+Reno,+NV+89501&amp;output=embed"></iframe>
+</div>
 </main>
 
 <footer>
