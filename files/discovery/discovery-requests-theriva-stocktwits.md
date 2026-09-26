@@ -90,6 +90,19 @@ Facts from the record: Mr. Kraws (Chairman), Mr. Wolf and Dr. Monahan make up al
 
 ---
 
+## Part 1A — Added from Supplemental Exhibit SR (the Heat Biologics / Elusys sale)
+
+**To Theriva:**
+- Director and officer questionnaires, 2020 to present, including disclosure of Mr. Wolf's and Dr. Monahan's roles in Heat's December 2023 sale of Elusys Therapeutics to Elusys Holdings Inc. (controlled by Mr. Wolf) and its July 2024 and March 2025 amendments
+- Board and Nominating Committee materials on the independence of Mr. Wolf and Dr. Monahan, including any consideration of the Elusys transaction
+- Documents sufficient to show whether Mr. Wolf, Dr. Monahan, Elusys Holdings Inc., Seed-One Ventures, Orion, or any entity they control has had any communication, agreement, financing, or interest concerning Rasayana Therapeutics, SYN-020, SYN-004, VCN-01, or any strategic-alternatives counterparty
+- Any recusal by either director from Theriva decisions on licensing, financing or strategic alternatives
+
+**To Heat / Scorpius Holdings or Elusys Holdings (nonparty, only if the Court finds it relevant and proportional):**
+- Composition and minutes of the special committee that approved the December 2023 sale; who approved the July 2024 and March 2025 amendments; whether Dr. Monahan served on or voted on any of them
+- Any valuation or fairness analysis of Elusys or ANTHIM
+- ANTHIM gross revenue from January 1, 2024 to present, sufficient to compute the 3% royalty the amendments eliminated
+
 ## Part 2 — To StockTwits, Inc.
 
 **Superseded by Plaintiff's StockTwits package** (Motion for Leave to Conduct Limited Expedited Nonparty Discovery, Declaration, Attachment A with Requests 1–18, Attachment B with Rule 30(b)(6) Topics 1–10, and Proposed Order; dated September 26, 2026). That package covers the TOVX stream, moderation and visibility, bots and linked accounts with hashed-then-exact IP handling, policies in effect, Plaintiff's own account, sentiment metrics, float data and Yahoo Finance, low-float claims, paid and issuer activity, institutional data customers, employee access logs, Lindzon and personnel TOVX trading, preclearance, cross-issuer preservation, complaints and regulators, and retention.
