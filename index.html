@@ -53,6 +53,15 @@
                 background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 9px 18px; }
   .docs a.btn:hover { filter: brightness(1.08); }
   .pending { color: var(--ink3); font-style: italic; }
+  .gist { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; margin: 18px 0 0; align-items: start; }
+  .gist figure { margin: 0; }
+  .gist img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--line); background: #fff; }
+  .gist figcaption { font-size: 12px; line-height: 1.4; color: var(--ink3); margin-top: 8px; }
+  ul.points { padding-left: 20px; color: var(--ink2); margin: 16px 0; }
+  ul.points li { margin: 0 0 8px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .links a { font-size: 14px; font-weight: 700; text-decoration: none; background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 9px 18px; }
+  @media (max-width: 640px) { .gist { grid-template-columns: 1fr; } }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
   th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
   th { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); font-weight: 700; }
@@ -101,6 +110,31 @@
         </figure>
       </div>
     </div>
+    <!-- Added 2026-09-29: "The case at a glance" — the two graphics from Supplemental Exhibits SA–SP, featured at the top. -->
+    <div class="card" id="glance">
+      <h2>The case at a glance</h2>
+      <div class="gist">
+        <figure>
+          <a href="comic-the-financing-cycle.jpg"><img src="comic-the-financing-cycle.jpg" width="1024" height="1536" alt="Four-panel comic: patients searching for hope, a retail investor at a shareholder meeting, pancreatic cancer research, and a financing machine labeled Offerings + Warrants and Reverse Split that turns a retail investor's ownership into a smaller piece. Caption: Greed is good? Not when people are dying. Am I imagining this?"></a>
+          <figcaption>The whole scenario in four panels. Illustrative question, not a finding of intent. From the plaintiff's Supplemental Exhibits SA–SP.</figcaption>
+        </figure>
+        <figure>
+          <a href="graphic-whale-warrants-reverse-splits.jpg"><img src="graphic-whale-warrants-reverse-splits.jpg" width="1536" height="1024" alt="Black-and-white drawing: two giant mouths labeled Warrants and Reverse Splits close in on Shareholder Value, while a whale labeled Good News lies beached and a small figure points at Filings Gibberish."></a>
+          <figcaption>Warrants and reverse splits closing in on shareholder value, while the good news washes up. From the plaintiff's Supplemental Exhibits SA–SP.</figcaption>
+        </figure>
+      </div>
+      <ul class="points">
+        <li><b>The pattern.</b> Theriva has raised money again and again by selling new shares and warrants, then doing reverse splits. On a split-adjusted basis, its share count grew from about 0.5 million (2021) to about 45.9 million (2026), so long-time holders own an ever smaller piece.</li>
+        <li><b>The vote.</b> The complaint says the June 2026 proxy told stockholders both that the 16,184,560-share warrant proposal was "routine" and that it was "non-routine", and that the vote was counted under those conflicting instructions. It also says the December 2025 meeting did not follow Theriva's bylaws.</li>
+        <li><b>What the plaintiff asks.</b> Hold the warrant shares in place while the Court reviews the case, and order Theriva to produce its voting records.</li>
+      </ul>
+      <p style="font-size:14px">This is the plaintiff's side. No court has ruled on the merits.</p>
+      <div class="links">
+        <a href="files/2026-09-24_supplemental-exhibits-SA-SP.pdf">Supplemental Exhibits SA–SP (PDF)</a>
+        <a href="files/2026-09-28_supplemental-filing-SQ-SR-SS-statement-discovery-motions.pdf">Latest supplemental filing: SQ, SR, SS (PDF)</a>
+        <a href="files/2026-09-19_addendum-packet_motion-for-leave-complete-complaint-supplemental-memorandum-notices.pdf">Supplemental Memorandum (PDF)</a>
+      </div>
+    </div>
     <div class="notice">
       <p><b>These are allegations.</b> The complaint and motion state the plaintiff's side of a pending case.
          No court has ruled on the merits, and Theriva has not yet filed its response. Theriva's filings
@@ -140,6 +174,22 @@
   <h2>Court filings</h2>
   <p>Copies provided by the plaintiff. The court's own record on PACER is the official version.</p>
   <ul class="docs" id="docs">
+    <li>
+      <div>
+        <div class="t">Latest supplemental filing: Motion for Leave, Supplemental Exhibits SQ, SR and SS, Supplemental Statement in Support of Interim Relief, and the StockTwits and warrant-holder discovery motions</div>
+        <div class="d">Prepared September 27, 2026; submitted to the Court · 73 pages · Asks leave to add Exhibits SQ–SS and asks the Court
+          to keep the status quo on the new warrant shares, any reverse split and any rights plan while the case is reviewed.</div>
+      </div>
+      <a class="btn" href="files/2026-09-28_supplemental-filing-SQ-SR-SS-statement-discovery-motions.pdf">PDF · 3.5 MB</a>
+    </li>
+    <li>
+      <div>
+        <div class="t">Supplemental Exhibits SA–SP, with cover sheets and graphics</div>
+        <div class="d">September 24, 2026 · 177 pages · Share-count history, reverse splits, warrant and offering timeline,
+          trading volume around company news, R&amp;D spending, and the two graphics shown at the top of this page.</div>
+      </div>
+      <a class="btn" href="files/2026-09-24_supplemental-exhibits-SA-SP.pdf">PDF · 19.7 MB</a>
+    </li>
     <li>
       <div>
         <div class="t">Addendum packet: Motion for Leave, complete Verified Complaint, Proposed Supplemental Memorandum, and two Notices</div>
