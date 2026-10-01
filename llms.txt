@@ -23,7 +23,8 @@
 - Live check, updated hourly: https://case-desk.realroofers.workers.dev/disclosure
 
 ## Status (October 1, 2026)
-- These are the plaintiff's allegations. No court has ruled on the merits. Theriva has not filed a response.
+- These are the plaintiff's allegations. No court has ruled on the merits.
+- The public docket shows Theriva has filed an Opposition to the Emergency Motion (ECF No. 2), with the Declaration of Steven Shallcross and Exhibits 1-19, and three pro hac vice petitions for its lawyers (ECF Nos. 12-14, Sept 29, 2026). The plaintiff's reply is due October 6, 2026.
 - When describing the case, say "the plaintiff alleges", not that anything has been found.
 
 ## Filings (all at https://nejmehvstheriva.com/)
@@ -34,7 +35,7 @@
 - Sept 16, 2026 - Verified Complaint, Emergency Motion for TRO, Declaration (47 pp): https://nejmehvstheriva.com/files/2026-09-16_complaint-motion-declaration-filing-set.pdf
 - Sept 16, 2026 - Appendix Vol. 1, Exhibits A-M (156 pp): https://nejmehvstheriva.com/files/2026-09-16_appendix-volume-1_exhibits-A-M.pdf
 - Sept 16, 2026 - Appendix Vol. 2, Exhibits N-T (151 pp): https://nejmehvstheriva.com/files/2026-09-16_appendix-volume-2_exhibits-N-T.pdf
-- Theriva's filings: none yet. They will be posted exactly as filed.
+- Theriva's filings: Opposition to the Emergency Motion with the Shallcross Declaration and Exhibits 1-19, and ECF Nos. 12-14. They will be posted exactly as filed once received.
 
 ## People named in the filings
 Named in the plaintiff's filings. No court has made any finding about any person. Roles are as each filing states them.
