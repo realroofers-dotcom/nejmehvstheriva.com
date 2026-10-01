@@ -1,0 +1,8 @@
+# nejmehvstheriva.com · built 2026-10-01 · robots-1a
+# The public court record of Nejmeh v. Theriva Biologics, Inc., 3:26-cv-00705 (D. Nev.).
+# Every search engine and AI crawler is welcome to read all of it.
+User-agent: *
+Allow: /
+
+Sitemap: https://nejmehvstheriva.com/sitemap.xml
+# Plain-text facts for AI systems: https://nejmehvstheriva.com/llms.txt
