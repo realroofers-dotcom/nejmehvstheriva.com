@@ -131,6 +131,16 @@
   details.people summary { font-weight: 700; cursor: pointer; color: var(--accent); }
   details.people ul { padding-left: 18px; font-size: 14.5px; color: var(--ink2); } details.people li { margin: 0 0 8px; }
   details.people .src { color: var(--ink3); font-size: 12.5px; } details.people .fine { font-size: 13px; color: var(--ink3); margin: 8px 0; }
+  /* disclosure-1a (2026-10-01): days counter in the header */
+  .disc { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; border: 2px solid #b23a2b; }
+  .dnum { text-align: center; background: #b23a2b; color: #fff; border-radius: 14px; padding: 10px 16px; min-width: 104px; }
+  .dnum b { display: block; font: 800 52px/1 Georgia, "Times New Roman", serif; }
+  .dnum span { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .dhead { font: 700 20px/1.3 Georgia, "Times New Roman", serif; color: var(--ink); margin: 0 0 8px; }
+  .dsub { font-size: 14.5px; margin: 0 0 6px; }
+  .dchk { font-size: 12.5px; color: var(--ink3); margin: 0; }
+  .disc.review { border-color: #9a6a00; } .disc.review .dnum { background: #9a6a00; }
+  @media (max-width: 560px) { .disc { grid-template-columns: 1fr; } .dnum { justify-self: start; display: flex; gap: 8px; align-items: baseline; } .dnum b { font-size: 40px; } .dhead { font-size: 18px; } }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
   th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
   th { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); font-weight: 700; }
@@ -178,6 +188,20 @@
       <a href="#tips"><svg class="ci"><use href="#c-tip"/></svg><span>Tip</span></a>
       <a href="#facts"><svg class="ci"><use href="#c-check"/></svg><span>Facts</span></a>
     </nav>
+    <!-- Added 2026-10-01 · disclosure-1a: his words: "announce on the site that to this date Theriva has not informed the shareholders of the lawsuit", "on the header", "a days counter should be prevalent", "absolute evidence". The claim is limited to what public links prove: no SEC filing and no press release mentions the case. The case-desk worker (/disclosure) rechecks SEC EDGAR and Theriva's press-release page hourly and the page drops the claim if anything new appears. -->
+    <div class="card disc" id="disclosure">
+      <div class="dnum"><b id="dDays">15</b><span>days</span></div>
+      <div class="dtxt">
+        <p class="dhead" id="dHead">Theriva has not mentioned this lawsuit to its stockholders in any SEC filing or press release.</p>
+        <p class="dsub" id="dSub">The lawsuit was filed on <b>September 16, 2026</b>. Since then Theriva has filed <b>nothing</b> with the SEC
+           (<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000894158&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" target="_blank" rel="noopener">see its SEC filings</a>),
+           and its only press release since then, on September 30 about VCN-01 results, does not mention the case
+           (<a href="https://therivabio.com/press_releases/theriva-biologics-announces-publication-of-the-results-from-the-virage-phase-2b-clinical-trial-of-vcn-01-in-metastatic-pancreatic-cancer-published-in-nature-medicine/" target="_blank" rel="noopener">read it</a>).
+           A search of every SEC filing for &ldquo;Nejmeh&rdquo; and for the case number finds nothing.</p>
+        <p class="dchk" id="dChk">Checked against SEC EDGAR and Theriva&rsquo;s press-release page, October 1, 2026.</p>
+      </div>
+    </div>
+
     <div class="card">
         <p class="court">U.S. District Court · District of Nevada</p>
         <h1>Nejmeh <i>v.</i> Theriva Biologics, Inc.</h1>
@@ -615,7 +639,7 @@
     <p>This site is maintained by the plaintiff, Mark Joseph Nejmeh, to make the public court record easy to find.
        It is not affiliated with Theriva Biologics, Inc. or the court. Nothing here is legal or investment advice.</p>
     <p>Contact: <a href="mailto:research@warrantwire.com">research@warrantwire.com</a> · <a href="#stay">Get updates · send a tip</a></p>
-    <p style="font-size:11px">Built 2026-10-01 · nejmehvstheriva site-2b (what Gemini / Google AI Mode says, with a ClaimReview correction; approved mock-up: phone layout, filings table, About this case, AI answer, people named, structured data)</p>
+    <p style="font-size:11px">Built 2026-10-01 · nejmehvstheriva site-2c (days counter: no SEC filing or press release mentions the lawsuit; what Gemini / Google AI Mode says, with a ClaimReview correction; approved mock-up: phone layout, filings table, About this case, AI answer, people named, structured data)</p>
   </div>
 </footer>
 <script>
@@ -656,6 +680,30 @@
   Array.prototype.forEach.call(document.querySelectorAll('#stay .tile[href="#updates"]'), function (a, i) {
     a.addEventListener("click", function () { up.elements.by_email.checked = i === 0 || up.elements.by_email.checked; if (i === 1) up.elements.by_text.checked = true; });
   });
+})();
+</script>
+<script>
+/* disclosure-1a: the counter. Days counted from the filing date; the claim stays only while the hourly check says "not_disclosed". */
+(function () {
+  var box = document.getElementById("disclosure"); if (!box) return;
+  var filed = Date.UTC(2026, 8, 16), now = new Date();
+  var days = Math.floor((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - filed) / 86400000);
+  document.getElementById("dDays").textContent = days;
+  fetch("https://case-desk.realroofers.workers.dev/disclosure").then(function (r) { return r.json(); }).then(function (d) {
+    var when = new Date(d.checked_at).toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+    if (d.status === "not_disclosed") {
+      document.getElementById("dChk").textContent = "Checked against SEC EDGAR and Theriva’s press-release page: " + when + ". Rechecked every hour.";
+    } else if (d.status === "check_failed") {
+      document.getElementById("dChk").textContent = "Last full check: October 1, 2026. The automatic recheck could not reach a source just now.";
+    } else {
+      box.className = "card disc review";
+      document.getElementById("dHead").textContent = d.status === "mentioned"
+        ? "An SEC filing now mentions this case. We are reading it and will post it here."
+        : "Theriva has published something new since the lawsuit was filed. We are reading it and will update this notice.";
+      document.getElementById("dSub").innerHTML = "The lawsuit was filed on <b>September 16, 2026</b>, " + days + " days ago.";
+      document.getElementById("dChk").textContent = "Last check: " + when + ".";
+    }
+  }).catch(function () {});
 })();
 </script>
 </body>
