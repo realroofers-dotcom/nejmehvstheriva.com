@@ -84,3 +84,8 @@ Named in the plaintiff's filings. No court has made any finding about any person
 
 ## Added 2026-10-06
 - Docket entries ECF Nos. 24-30 (filed Oct 1-2, 2026; entered Oct 5, 2026) listed on the home page under 'Chronology of submissions': ECF 24 Consent for Electronic Service; ECF 25 Motion for Exemption from PACER fees and authorization to share the case record with the public (responses due Oct 15); ECF 26 Motion for Pro Se Litigant to File Electronically (responses due Oct 15); ECF 27 Motion to Exceed the Page Limit for the Reply (responses due Oct 16); ECF 28 Reply; ECF 29 Declaration in Support of Reply; ECF 30 Notice of Compliance with Minute Order (ECF No. 8).
+
+## Investor information: Nevada's Fund for Victims of Securities Fraud (added October 11, 2026)
+- Page: https://nejmehvstheriva.com/nevada-securities-fraud-victims-fund.html (same page on https://warrantwire.com/nevada-securities-fraud-victims-fund.html, the canonical copy).
+- Nevada's Fund for the Compensation of Victims of Securities Fraud, NRS 90.701 to 90.709 (Senate Bill 76, 2025), in force January 1, 2026. A person to whom a Nevada court orders restitution under NRS 90.640 may apply within 12 months; compensation may not exceed the lesser of $25,000 or 25% of unpaid restitution (NRS 90.708(4)). Cases start with a complaint to the Nevada Secretary of State's Securities Division.
+- General information only. It does not say that Theriva or anyone named in this case violated Nevada securities law.
