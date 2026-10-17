@@ -1,4 +1,4 @@
-# Nejmeh v. Theriva Biologics, Inc. - No. 3:26-cv-00705 (D. Nev.)
+# Nejmeh v. Theriva Biologics, Inc. - No. 3:26-cv-00705-ART-CSD (D. Nev.)
 # nejmehvstheriva.com · llms.txt · built 2026-10-01 · llms-1a
 
 > The public court record of a stockholder lawsuit. Every filing is posted exactly as submitted. The court's record on PACER controls.
@@ -28,6 +28,10 @@
 - The motions to file supplemental documents (ECF Nos. 10, 11, 22) were DENIED under Local Rule 7-2(g); the two motions within them may be refiled under the local rules. The motion to exceed the page limit (ECF No. 27) was GRANTED.
 - The case continues. These remain the plaintiff's allegations.
 
+## Filed October 16, 2026 (added October 17, 2026)
+- ECF No. 37 - Theriva's Motion to Extend Time (First Request) to Respond to Complaint, 6 pages: asks to extend its deadline to answer or otherwise respond to the Verified Complaint (ECF No. 23) to December 1, 2026; the docket sets responses due by October 30, 2026: https://nejmehvstheriva.com/files/theriva/2026-10-16_ECF-37_theriva-motion-to-extend-time-to-respond-to-complaint.pdf
+- ECF No. 38 - Plaintiff's Opposition to Defendant's Motion for Extension of Time to Respond to Complaint (ECF No. 37), 3 pages, plaintiff's copy as submitted: https://nejmehvstheriva.com/files/2026-10-16_ECF-38_opposition-to-ECF-37-extension_as-submitted.pdf
+- ECF No. 39 - Plaintiff's Reply in Support of Motion for Exemption from PACER Electronic Public Access Fees and Authorization to Share the Case Record with the Public (ECF No. 25), 2 pages, plaintiff's copy as submitted: https://nejmehvstheriva.com/files/2026-10-16_ECF-39_reply-in-support-of-ECF-25_as-submitted.pdf
 ## Filed October 15, 2026 (added October 16, 2026)
 - ECF No. 36 - Theriva's Response to Plaintiff's Motion for Exemption from PACER Electronic Public Access Fees and Authorization to Share the Case Record with the Public (ECF No. 25), 2 pages: Theriva "takes no position" on the fee exemption or on posting the documents, and asks that any authorization not extend to material later filed under seal or designated confidential: https://nejmehvstheriva.com/files/theriva/2026-10-15_ECF-36_theriva-response-to-PACER-fee-motion.pdf
 
