@@ -227,12 +227,20 @@
       <p style="font-size:16px;margin:0 0 10px;color:#0b2540">First Amended Verified Complaint &middot; filed October 19, 2026 (ECF No. 41) &middot; 1 hour 30 minutes</p>
       <audio id="bigAudio" controls preload="none" style="width:100%;max-width:560px" src="files/audio/2026-10-19_ECF-41_first-amended-verified-complaint_computer-generated-reading.mp3"></audio>
       <p style="font-size:13px;margin:8px 0 0;color:#0b2540">Computer-generated reading. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-10-19_ECF-41_first-amended-verified-complaint-with-exhibits-1-25-and-summonses_as-filed.pdf" target="_blank" rel="noopener">Read the filed PDF</a></p>
+      <!-- Added 2026-10-24 · plays-1a: Mark: "let audio count be on the page". Counted by the case-desk worker when someone presses play, once per visitor per day. -->
+      <p class="playCount" style="font-size:15px;font-weight:700;margin:10px 0 0;color:#0b2540" hidden></p>
     </div>
     <script>
       (function(){var b=document.getElementById('bigPlay'),a=document.getElementById('bigAudio'),i=document.getElementById('bigPlayIcon');if(!b||!a)return;
         b.addEventListener('click',function(){if(a.paused){a.play();}else{a.pause();}});
         a.addEventListener('play',function(){i.setAttribute('d','M7 5h4v14H7z M13 5h4v14h-4z');});
         a.addEventListener('pause',function(){i.setAttribute('d','M8 5v14l11-7z');});})();
+      (function(){var API='https://case-desk.realroofers.workers.dev',sent=false;
+        function show(d){if(!d||!d.ok||!d.plays)return;var s=d.since?new Date(d.since+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}):'';
+          document.querySelectorAll('.playCount').forEach(function(p){p.textContent='Played '+d.plays.toLocaleString('en-US')+(d.plays===1?' time':' times')+(s?' (counted since '+s+')':'');p.hidden=false;});}
+        fetch(API+'/plays?f=fac-audio').then(function(r){return r.json();}).then(show).catch(function(){});
+        document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
+          fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
     <!-- Added 2026-10-01 · phone-1a: icon-driven, phone first, "the meat is the filings" (his words). A sticky icon bar; the filings come right after the case title. Nothing in any filing, link or PDF changed: blocks were moved, not edited. -->
     <nav class="ibar" aria-label="Sections">
@@ -419,6 +427,7 @@
         <div class="d">Filed October 19, 2026 &middot; ECF No. 41 (proposed summonses ECF Nos. 41-1 to 41-4) &middot; 269 pages &middot; 16.9 MB &middot; the court&rsquo;s copy from PACER, unaltered.</div>
         <div class="d" style="margin-top:8px"><svg class="ci"><use href="#c-audio"/></svg> <b>Listen to the complaint</b> (1 hour 30 minutes). Computer-generated reading. The document filed with the Court is the official version.</div>
         <audio controls preload="none" style="width:100%;max-width:520px;margin-top:6px" src="files/audio/2026-10-19_ECF-41_first-amended-verified-complaint_computer-generated-reading.mp3"></audio>
+        <div class="d playCount" style="margin-top:4px;font-weight:700" hidden></div>
       </div>
       <a class="btn" href="files/2026-10-19_ECF-41_first-amended-verified-complaint-with-exhibits-1-25-and-summonses_as-filed.pdf" target="_blank" rel="noopener">PDF</a>
     </li>
