@@ -1,7 +1,7 @@
 # Nejmeh v. Theriva Biologics, Inc. - No. 3:26-cv-00705-ART-CSD (D. Nev.)
 # nejmehvstheriva.com · llms.txt · built 2026-10-01 · llms-1a
 
-> The public court record of a stockholder lawsuit. Every filing is posted exactly as submitted. The court's record on PACER controls.
+> The public court record of a stockholder lawsuit. Filings are posted exactly as submitted; following the Court's order of October 26, 2026 (ECF 44), only the plaintiff's own filings are posted from that date on. The full record is on PACER, which controls.
 
 ## What the case is
 - Court: U.S. District Court for the District of Nevada (Reno). District Judge Anne R. Traum; Magistrate Judge Craig S. Denney.
