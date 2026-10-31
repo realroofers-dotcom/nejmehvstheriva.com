@@ -242,6 +242,10 @@
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
+    <!-- Added 2026-10-30 · site-3j: Oct 30 minute order notice. Mark approved the wording ("yes"). Own words; no copy of the order is posted (same approach as ECF 44). -->
+    <div class="card" id="oct30-notice" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
+      <p style="margin:0;font-size:16px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-gavel"/></svg> <b>October 30, 2026:</b> The Court directed the plaintiff to file his amended complaint by a motion for leave under Local Rule 15-1. The plaintiff is preparing that motion.</p>
+    </div>
     <!-- Added 2026-10-27 · site-3d: ECF 44 notice. Mark: "we need a notice on the site per judges order" (text approved: "yes"). Own words; no copy of the order is posted. -->
     <div class="card" id="ecf44-notice" style="padding:10px 14px;border:2px solid #7a5a00;background:#fff8e6;color:#2b2100;margin:0 0 12px">
       <details><summary style="cursor:pointer;font-size:17px;font-weight:700;color:#2b2100"><svg class="ci" style="vertical-align:-4px;color:#7a5a00"><use href="#c-scale"/></svg> NOTICE: Court order of October 26, 2026 (ECF No. 44) <span style="font-weight:400;font-size:14px">&middot; tap to read</span></summary><div style="margin-top:8px">
@@ -400,6 +404,8 @@
       <table>
         <thead><tr><th>ECF</th><th>Date</th><th>What the Court ordered</th><th>Status</th></tr></thead>
         <tbody>
+          <!-- Added 2026-10-30 · site-3j: Oct 30 minute order (text-only docket entry), described in the plaintiff's words; no copy posted. -->
+          <tr><td class="n">&mdash;</td><td class="dt">Oct 30, 2026</td><td>Minute order (District Judge Anne R. Traum): ECF No. 41, the proposed amended complaint, is to be presented by a motion for leave under Local Rule 15-1. If the amendment is granted, the motion on the November 18 meeting (ECF No. 42) would need to be refiled.</td><td>Plaintiff is preparing the motion for leave with the corrected amended complaint.</td></tr>
           <!-- Added 2026-10-20 · site-2u: ECF 40, posted as filed (byte-identical PDF, sha256 C36D517F...33D7). -->
           <tr><td class="n">40</td><td class="dt">Oct 16, 2026</td><td>Order (re ECF No. 37), signed by Magistrate Judge Craig S. Denney: &ldquo;Good cause appearing, Defendant&rsquo;s motion for an extension of time to respond to the complaint (ECF No. 37) is <b>GRANTED</b>. Defendant will have to and including December 1, 2026, to answer or otherwise respond to the complaint in this matter.&rdquo; <a href="files/court/2026-10-16_ECF-40_order-granting-ECF-37-extension-to-Dec-1.pdf" target="_blank" rel="noopener">Read the order (PDF, 1 page)</a></td><td>Granted. Theriva&rsquo;s response due December 1, 2026.</td></tr>
           <!-- Added 2026-10-15 · site-2p: ECF 34, posted as filed (byte-identical PDF). -->

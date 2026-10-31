@@ -22,6 +22,9 @@
 - The proxy says the lawsuit made the company aware that its 2026 annual-meeting proxy "contained errors." It calls a special meeting, in person in Parets del Valles (Barcelona), Spain, in November 2026 (date not yet set), to ratify or re-approve issuing up to 16,184,560 shares on exercise of the New Warrants and to raise authorized common stock to 500,000,000.
 - Earlier record: as of October 1, 2026, no Theriva SEC filing or press release mentioned the case.
 
+## Court minute order of October 30, 2026 (text-only docket entry)
+- The Court directed the plaintiff to file his amended complaint by a motion for leave under Local Rule 15-1; if the amendment is granted, the motion on the November 18 meeting (ECF No. 42) would need to be refiled. The plaintiff is preparing that motion. (Described in the plaintiff's words; the order itself is on PACER.)
+
 ## Court order of October 13, 2026 (ECF No. 33, filed October 14, 2026)
 - Order: https://nejmehvstheriva.com/files/court/2026-10-14_ECF-33_order-denying-TRO-PI-and-ECF-10-11-22.pdf (10 pages, District Judge Anne R. Traum).
 - The emergency motion for a TRO or preliminary injunction (ECF No. 2) was DENIED because the Court found the plaintiff had not shown irreparable harm; the Court did not address the other factors and did not decide the merits.
