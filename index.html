@@ -214,6 +214,7 @@
 <symbol id="c-fund" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 8v8 M14.5 9.5c-.4-.9-1.4-1.4-2.5-1.4-1.4 0-2.5.8-2.5 1.9s1 1.6 2.5 1.9 2.5.8 2.5 1.9-1.1 1.9-2.5 1.9c-1.1 0-2.1-.5-2.5-1.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
 <symbol id="c-press" viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z M17 9h3v8a2 2 0 0 1-2 2 M7 9h7 M7 13h7 M7 16h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
 <symbol id="c-audio" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z M16 9a4 4 0 0 1 0 6 M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+<symbol id="c-opinion" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z M8 9h8 M8 12h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
 <symbol id="c-scale"viewBox="0 0 24 24"><path d="M12 3v18 M7 21h10 M4 7h16 M4 7l-3 7a3 3 0 0 0 6 0z M20 7l-3 7a3 3 0 0 0 6 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
     </svg>
     <!-- Added 2026-10-17 · site-2t: Mark: "it would be good on the nejmehvstheriva site if we had the case number up top". -->
@@ -242,6 +243,10 @@
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
+    <!-- Added 2026-11-02 · opinion-1a: link card to the approved opinion of Nov 2, 2026 (Mark: "approved"). -->
+    <div class="card" id="opinion-nov2" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
+      <p style="margin:0;font-size:17px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-opinion"/></svg> <b><a style="color:#1f4e79" href="/opinion-2026-11-02.html">What is happening at Theriva? An opinion</a></b> &middot; November 2, 2026 &middot; <span style="font-size:14px">SYN-004 sold for $350,000 upfront; 500 million shares on the November 18 ballot; each fact linked to Theriva&rsquo;s own filings.</span></p>
+    </div>
     <!-- Added 2026-10-30 · site-3j/3k: Oct 30 minute order. Mark: "post it the courts way" - the docket text exactly as the Court entered it (received free by NEF email, not through the fee exemption). -->
     <div class="card" id="oct30-notice" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
       <p style="margin:0 0 6px;font-size:16px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-gavel"/></svg> <b>Court order of October 30, 2026</b> (text-only docket entry, as entered by the Court):</p><blockquote style="margin:0;padding:6px 10px;border-left:3px solid #1f4e79;background:#fff;color:#0b2540;font-size:14px">MINUTE ORDER IN CHAMBERS of the Honorable District Judge Anne R. Traum on 10/30/2026. Before the Court is Plaintiff&#39;s &quot;Proposed First Amended Verified Complaint.&quot; (ECF No. 41 ). The Court kindly directs Plaintiff to Local Rule 15-1 for the appropriate procedures required to file a motion for an amended pleading. The Court notes that the filing of an amended complaint would necessitate a finding that the pending motion for preliminary injunction (ECF No. 42 ) is moot and would need to be refiled, should the motion to amend be granted. See Ramirez v. Cnty. of San Bernadino, 806 F.3d 1002, 1008 (9th Cir. 2015) (&quot;It is well-established in our circuit that an amended complaint supersedes the original, the latter being treated thereafter as non-existent.&quot;) (internal quotations omitted). (Copies have been distributed pursuant to the NEF - NHA) (Entered: 10/30/2026)</blockquote>
@@ -277,6 +282,8 @@
       <a href="/press-release-2026-10-22.html"><svg class="ci"><use href="#c-press"/></svg><span>Press release</span></a>
       <!-- Added 2026-10-30 · press-4a: release to scientists -->
       <a href="/press-release-2026-10-30-scientists.html"><svg class="ci"><use href="#c-press"/></svg><span>For scientists</span></a>
+      <!-- Added 2026-11-02 · opinion-1a: Mark: "this opinion needs to be on nejmehvstheriva.com", text "approved". -->
+      <a href="/opinion-2026-11-02.html"><svg class="ci"><use href="#c-opinion"/></svg><span>Opinion</span></a>
       <a href="#ecf44-notice"><svg class="ci"><use href="#c-scale"/></svg><span>Notice</span></a>
       <a href="#orders"><svg class="ci"><use href="#c-gavel"/></svg><span>Judge&rsquo;s orders</span></a>
       <a href="#docket"><svg class="ci"><use href="#c-clock"/></svg><span>Chronology</span></a>
