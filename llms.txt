@@ -7,8 +7,8 @@
 - Court: U.S. District Court for the District of Nevada (Reno). District Judge Anne R. Traum; Magistrate Judge Craig S. Denney.
 - Filed: September 16, 2026.
 - Plaintiff: Mark Joseph Nejmeh, a Theriva stockholder of about four years, representing himself.
-- Defendant: Theriva Biologics, Inc. (NYSE American: TOVX).
-- Claims in the Verified Complaint: (1) the federal proxy rules, Section 14(a) of the Securities Exchange Act and Rule 14a-9; (2) Nevada corporate law and Theriva's bylaws.
+- Defendants: Theriva Biologics, Inc. (NYSE American: TOVX) and its directors Steven A. Shallcross, Jeffrey J. Kraws, Jeffrey Wolf and John Monahan (added by the First Amended Verified Complaint).
+- Counts in the First Amended Verified Complaint (October 31, 2026; leave granted November 2, 2026): (I) the federal proxy rules, Section 14(a) of the Securities Exchange Act and Rule 14a-9; (II) Section 20(a); (III) Section 10(b) and Rule 10b-5, on a statement of October 2, 2023; (IV) fiduciary duty, NRS 78.138; (V) a declaration under Nevada corporate law and Theriva's bylaws. These are the plaintiff's allegations.
 - It is NOT a civil-rights case. Docket websites list it under the court's nature-of-suit code 440 ("Other Civil Rights") and some repeat a 42 U.S.C. 1983 label; the plaintiff filed a Notice of Administrative Case Classification Discrepancy (ECF No. 6, September 22, 2026).
 - It has nothing to do with Nejmeh SC, the Lebanese football club.
 
@@ -21,6 +21,15 @@
 - Theriva first mentioned this lawsuit on October 9, 2026, 23 days after it was filed (September 16, 2026), in a preliminary proxy statement (SEC Schedule 14A, PRE 14A, accession 0001104659-26-115074): https://www.sec.gov/Archives/edgar/data/894158/000110465926115074/tm2627231d1_pre14a.htm (saved copy: https://nejmehvstheriva.com/files/theriva-sec/2026-10-09_PRE-14A_theriva-preliminary-proxy-special-meeting.pdf).
 - The proxy says the lawsuit made the company aware that its 2026 annual-meeting proxy "contained errors." It calls a special meeting, in person in Parets del Valles (Barcelona), Spain, in November 2026 (date not yet set), to ratify or re-approve issuing up to 16,184,560 shares on exercise of the New Warrants and to raise authorized common stock to 500,000,000.
 - Earlier record: as of October 1, 2026, no Theriva SEC filing or press release mentioned the case.
+
+## Filed October 31, 2026 and the order of November 2, 2026 (added November 6, 2026, site-4a)
+- ECF No. 46 - Plaintiff's Motion for Leave to Amend, plaintiff's copy as submitted: https://nejmehvstheriva.com/files/2026-10-31_ECF-46/ECF-46_motion-for-leave-to-amend_as-submitted.pdf
+- ECF No. 46, Exhibit A - First Amended Verified Complaint (128 paragraphs, Counts I-V): https://nejmehvstheriva.com/files/2026-10-31_ECF-46/ECF-46-1_Ex-A_first-amended-verified-complaint_as-submitted.pdf (exhibits A-1 to A-30, Exhibit B redline, proposed order and certificate in the same folder, linked from the home page).
+- ECF No. 47 - Plaintiff's motion to decide ECF No. 42 first: https://nejmehvstheriva.com/files/2026-10-31_ECF-47/ECF-47_motion-to-decide-ECF-42-first_as-submitted.pdf
+- ECF No. 48 - Plaintiff's motion to seal ECF Nos. 4-3 and 4-4: https://nejmehvstheriva.com/files/2026-10-31_ECF-48/ECF-48_motion-to-seal-ECF-4-3-and-4-4_as-submitted.pdf
+- ECF No. 43 - Corrected Certificate of Service for ECF No. 42: https://nejmehvstheriva.com/files/2026-10-23_ECF-43_corrected-certificate-of-service-for-ECF-42_as-submitted.pdf
+- ECF No. 49 - Minute order of November 2, 2026, in the plaintiff's words (the order is on PACER): leave to amend granted; ECF No. 47 denied as moot; the Court will decide the emergency motion (ECF No. 42) on the claims in the First Amended Verified Complaint; Theriva's response due November 6, 2026; plaintiff's reply due November 12, 2026.
+- The audio reading on this site is of the October 19, 2026 version (ECF No. 41). The Court accepted the October 31, 2026 version.
 
 ## Court minute order of October 30, 2026 (text-only docket entry)
 - Docket text as entered by the Court: MINUTE ORDER IN CHAMBERS of the Honorable District Judge Anne R. Traum on 10/30/2026. Before the Court is Plaintiff's "Proposed First Amended Verified Complaint." (ECF No. 41 ). The Court kindly directs Plaintiff to Local Rule 15-1 for the appropriate procedures required to file a motion for an amended pleading. The Court notes that the filing of an amended complaint would necessitate a finding that the pending motion for preliminary injunction (ECF No. 42 ) is moot and would need to be refiled, should the motion to amend be granted. See Ramirez v. Cnty. of San Bernadino, 806 F.3d 1002, 1008 (9th Cir. 2015) ("It is well-established in our circuit that an amended complaint supersedes the original, the latter being treated thereafter as non-existent.") (internal quotations omitted). (Copies have been distributed pursuant to the NEF - NHA) (Entered: 10/30/2026)
