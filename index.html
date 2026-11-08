@@ -244,7 +244,13 @@
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
-    <!-- BUILT 2026-11-07 · news-1b: Latest News icon on the home page. Mark 11/7: "as an icon that thehy can click "Latest News" Theriva responds and then they can click and get a summary". Plaintiff's summary; ECF 50 not posted (ECF 44). -->
+    <!-- Added 2026-11-07 · site-4e: Mark: "not seeing the new audio". Reply audio up top, under the complaint player. Same MP3 as site-4d. -->
+    <div class="card" id="listen-reply" style="text-align:center;padding:12px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:12px 0 0">
+      <p style="font-size:20px;font-weight:700;margin:0 0 2px;color:#0b2540">Listen to the reply</p>
+      <p style="font-size:15px;margin:0 0 8px;color:#0b2540">Plaintiff&rsquo;s reply in support of the motion to postpone the November 18 meeting &middot; filed November 7, 2026 (<a style="color:#1f4e79" href="#ecf52">ECF No. 52</a>) &middot; about 50 minutes</p>
+      <audio controls preload="none" style="width:100%;max-width:560px" src="files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
+      <p style="font-size:13px;margin:8px 0 0;color:#0b2540">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">Read the reply (PDF)</a></p>
+    </div>    <!-- BUILT 2026-11-07 · news-1b: Latest News icon on the home page. Mark 11/7: "as an icon that thehy can click "Latest News" Theriva responds and then they can click and get a summary". Plaintiff's summary; ECF 50 not posted (ECF 44). -->
     <a id="news-nov7" href="/news-2026-11-07.html" aria-label="Latest News: Theriva responds. Click for a summary." style="display:flex;align-items:center;gap:14px;padding:12px 16px;border:2px solid #1f4e79;border-radius:12px;background:#1f4e79;color:#fff;text-decoration:none;margin:12px 0">
       <svg viewBox="0 0 24 24" width="44" height="44" style="flex:0 0 44px;color:#fff" aria-hidden="true"><use href="#c-news"/></svg>
       <span style="display:block;color:#fff"><span style="display:block;font-size:20px;font-weight:800;line-height:1.2">Latest News</span><span style="display:block;font-size:16px;line-height:1.35">Theriva responds &middot; November 7, 2026 &middot; click for a summary</span></span>
