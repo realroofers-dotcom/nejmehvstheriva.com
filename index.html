@@ -1,3 +1,10 @@
+    <!-- Added 2026-11-07 · site-4g: Mark: "they need to hear our response so it should be next to their summary". Reply audio right under the Latest News tile, compact like the complaint card. -->
+    <div class="card" id="listen-reply" style="text-align:center;padding:6px 12px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
+      <p style="font-size:16px;font-weight:700;margin:2px 0 0;color:#0b2540">Hear our side: listen to the reply</p>
+      <p style="font-size:13px;margin:0 0 4px;color:#0b2540">Plaintiff&rsquo;s reply to Theriva&rsquo;s response &middot; filed November 7, 2026 (<a style="color:#1f4e79" href="#ecf52">ECF No. 52</a>) &middot; about 50 minutes</p>
+      <audio controls preload="none" style="width:100%;max-width:420px;height:32px" src="files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
+      <p style="font-size:11px;margin:4px 0 0;color:#0b2540">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">Read the reply (PDF)</a></p>
+    </div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,21 +251,6 @@
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
-    <!-- Added 2026-11-07 · site-4e: Mark: "not seeing the new audio". Reply audio up top, under the complaint player. Same MP3 as site-4d. -->
-    <div class="card" id="listen-reply" style="text-align:center;padding:12px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:12px 0 0">
-      <p style="font-size:20px;font-weight:700;margin:0 0 2px;color:#0b2540">Listen to the reply</p>
-      <p style="font-size:15px;margin:0 0 8px;color:#0b2540">Plaintiff&rsquo;s reply in support of the motion to postpone the November 18 meeting &middot; filed November 7, 2026 (<a style="color:#1f4e79" href="#ecf52">ECF No. 52</a>) &middot; about 50 minutes</p>
-      <audio controls preload="none" style="width:100%;max-width:560px" src="files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
-      <p style="font-size:13px;margin:8px 0 0;color:#0b2540">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">Read the reply (PDF)</a></p>
-    </div>    <!-- BUILT 2026-11-07 · news-1b: Latest News icon on the home page. Mark 11/7: "as an icon that thehy can click "Latest News" Theriva responds and then they can click and get a summary". Plaintiff's summary; ECF 50 not posted (ECF 44). -->
-    <a id="news-nov7" href="/news-2026-11-07.html" aria-label="Latest News: Theriva responds. Click for a summary." style="display:flex;align-items:center;gap:14px;padding:12px 16px;border:2px solid #1f4e79;border-radius:12px;background:#1f4e79;color:#fff;text-decoration:none;margin:12px 0">
-      <svg viewBox="0 0 24 24" width="44" height="44" style="flex:0 0 44px;color:#fff" aria-hidden="true"><use href="#c-news"/></svg>
-      <span style="display:block;color:#fff"><span style="display:block;font-size:20px;font-weight:800;line-height:1.2">Latest News</span><span style="display:block;font-size:16px;line-height:1.35">Theriva responds &middot; November 7, 2026 &middot; click for a summary</span></span>
-    </a>
-    <!-- Added 2026-11-02 · opinion-1a: link card to the approved opinion of Nov 2, 2026 (Mark: "approved"). -->
-    <div class="card" id="opinion-nov2" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
-      <p style="margin:0;font-size:17px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-opinion"/></svg> <b><a style="color:#1f4e79" href="/opinion-2026-11-02">What is happening at Theriva? An opinion</a></b> &middot; November 2, 2026 &middot; <span style="font-size:14px">SYN-004 sold for $350,000 upfront; 500 million shares on the November 18 ballot; each fact linked to Theriva&rsquo;s own filings.</span></p>
-    </div>
     <!-- BUILT 2026-11-06 site-4a. Added: Nov 2 order in plain words, no copy posted (ECF 44 approach). Mark 11/6: "yes fix the site". -->
     <div class="card" id="nov2-notice" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
       <p style="margin:0;font-size:16px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-gavel"/></svg> <b>Court order of November 2, 2026 (ECF No. 49):</b> the Court granted leave to file the First Amended Verified Complaint (<a style="color:#1f4e79" href="#ecf46">ECF No. 46</a>) and will decide the emergency motion to postpone the November 18 meeting (<a style="color:#1f4e79" href="#ecf42">ECF No. 42</a>) on the claims in that complaint. Theriva&rsquo;s response is due <b>November 6, 2026</b>. Mr. Nejmeh&rsquo;s reply is due <b>November 12, 2026</b>. In the plaintiff&rsquo;s words; the order itself is on PACER.</p>
