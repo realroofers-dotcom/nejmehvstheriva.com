@@ -241,6 +241,7 @@
           <p style="font-size:15px;font-weight:700;margin:0;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-audio"/></svg> Hear our side: the reply <span style="font-weight:400;font-size:13px">&middot; filed November 7, 2026 (<a style="color:#1f4e79" href="#ecf52">ECF No. 52</a>) &middot; about 50 minutes</span></p>
           <audio controls preload="none" style="width:100%;max-width:440px;height:32px" src="files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
           <p style="font-size:11px;margin:2px 0 0;color:#0b2540">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The filed document is the official version. <a style="color:#1f4e79" href="files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">Read the reply (PDF)</a></p>
+          <p class="playCountReply" style="font-size:12px;font-weight:700;margin:2px 0 0;color:#0b2540" hidden></p>
         </div>
       </div>
     </div>
@@ -256,7 +257,15 @@
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
-    <!-- Added 2026-11-02 · opinion-1a: link card to the approved opinion of Nov 2, 2026 (Mark: "approved"). -->
+    <script>
+      /* reply-plays-1a 2026-11-08 (Mark: "did you put a counter on the new audio"): plays of the ECF 52 reply reading, counted by case-desk like the complaint, once per visitor per day. */
+      (function(){var API='https://case-desk.realroofers.workers.dev',F='reply-audio',sent=false;
+        function show(d){if(!d||!d.ok||!d.plays)return;var s=d.since?new Date(d.since+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}):'';
+          document.querySelectorAll('.playCountReply').forEach(function(p){p.textContent='Played '+d.plays.toLocaleString('en-US')+(d.plays===1?' time':' times')+(s?' (counted since '+s+')':'');p.hidden=false;});}
+        fetch(API+'/plays?f='+F).then(function(r){return r.json();}).then(show).catch(function(){});
+        document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-52_reply/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
+          fetch(API+'/play?f='+F,{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
+    </script>    <!-- Added 2026-11-02 · opinion-1a: link card to the approved opinion of Nov 2, 2026 (Mark: "approved"). -->
     <div class="card" id="opinion-nov2" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
       <p style="margin:0;font-size:17px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-opinion"/></svg> <b><a style="color:#1f4e79" href="/opinion-2026-11-02">What is happening at Theriva? An opinion</a></b> &middot; November 2, 2026 &middot; <span style="font-size:14px">SYN-004 sold for $350,000 upfront; 500 million shares on the November 18 ballot; each fact linked to Theriva&rsquo;s own filings.</span></p>
     </div>

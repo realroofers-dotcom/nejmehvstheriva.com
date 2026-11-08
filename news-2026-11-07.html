@@ -58,7 +58,16 @@ ul{padding-left:22px}li{margin:0 0 10px}
 <p><i>Updated November 7, 2026.</i> Plaintiff disputes Theriva&rsquo;s arguments. He filed his reply on November 7, 2026 (ECF No. 52), within the Court&rsquo;s November 12 deadline (ECF No. 49), with a motion for leave to file excess pages (ECF No. 51). The meeting remains scheduled for November 18, 2026.</p>
 <p><b>Listen to the reply</b> (about 50 minutes):</p>
 <audio controls preload="none" style="width:100%;max-width:560px" src="/files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
+<p class="playCountReply" style="font-size:14px;font-weight:700;margin:6px 0 0" hidden></p>
 <p style="font-size:14px;color:var(--ink3)">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The document filed with the Court is the official version: <a href="/files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">read the reply (PDF)</a> and <a href="/#ecf52">its exhibits</a>.</p>
 </div>
-</body>
+<script>
+      /* reply-plays-1a 2026-11-08 (Mark: "did you put a counter on the new audio"): plays of the ECF 52 reply reading, counted by case-desk like the complaint, once per visitor per day. */
+      (function(){var API='https://case-desk.realroofers.workers.dev',F='reply-audio',sent=false;
+        function show(d){if(!d||!d.ok||!d.plays)return;var s=d.since?new Date(d.since+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}):'';
+          document.querySelectorAll('.playCountReply').forEach(function(p){p.textContent='Played '+d.plays.toLocaleString('en-US')+(d.plays===1?' time':' times')+(s?' (counted since '+s+')':'');p.hidden=false;});}
+        fetch(API+'/plays?f='+F).then(function(r){return r.json();}).then(show).catch(function(){});
+        document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-52_reply/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
+          fetch(API+'/play?f='+F,{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
+</script></body>
 </html>
