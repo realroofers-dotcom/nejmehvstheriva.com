@@ -220,17 +220,29 @@
     </svg>
     <!-- Added 2026-10-17 · site-2t: Mark: "it would be good on the nejmehvstheriva site if we had the case number up top". -->
     <p style="margin:0 0 8px;text-align:center;font-weight:700;font-size:15px;letter-spacing:.3px">Case No. 3:26-cv-00705-ART-CSD &middot; U.S. District Court, District of Nevada</p>
-    <!-- Added 2026-10-21 · site-2x: Mark: "you need a bigger better icon for people to listen to the complaint ... it should be first front and center". Same MP3 and label as site-2v (approved 10/19: "computer generated"). ; site-3h 2026-10-29: moved to the very top under the case number, Mark: "bring the audio player up top", "it should be first to see". -->
-    <div class="card" id="listen-top" style="text-align:center;padding:6px 12px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540">
-      <button type="button" id="bigPlay" aria-label="Play: listen to the First Amended Verified Complaint" style="width:34px;height:34px;border-radius:50%;border:0;background:#1f4e79;color:#fff;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2);display:inline-flex;align-items:center;justify-content:center;vertical-align:middle">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path id="bigPlayIcon" d="M8 5v14l11-7z" fill="currentColor"/></svg>
-      </button>
-      <p style="font-size:16px;font-weight:700;margin:4px 0 0;color:#0b2540">Listen to the complaint</p>
-      <p style="font-size:13px;margin:0 0 4px;color:#0b2540">First Amended Verified Complaint &middot; recording of the October 19, 2026 version (ECF No. 41) &middot; 1 hour 30 minutes</p>
-      <audio id="bigAudio" controls preload="none" style="width:100%;max-width:420px;height:32px" src="files/audio/2026-10-19_ECF-41_first-amended-verified-complaint_computer-generated-reading.mp3"></audio>
-      <p style="font-size:11px;margin:4px 0 0;color:#0b2540">Computer-generated reading. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-10-19_ECF-41_first-amended-verified-complaint-with-exhibits-1-25-and-summonses_as-filed.pdf" target="_blank" rel="noopener">Read the October 19 PDF</a><br>The Court accepted the October 31, 2026 version: <a style="color:#1f4e79" href="#ecf46">ECF No. 46, Exhibit A</a>. A new recording will follow.</p>
-      <!-- Added 2026-10-24 · plays-1a: Mark: "let audio count be on the page". Counted by the case-desk worker when someone presses play, once per visitor per day. -->
-      <p class="playCount" style="font-size:12px;font-weight:700;margin:4px 0 0;color:#0b2540" hidden></p>
+    <!-- BUILT 2026-11-07 · top-1a: Mark: "the top large audio listen to the complaint is too big ... lets move a graphic up there of the comic and make the site more attractive and better for the user". Comic beside Latest News and two slim players. Same MP3s, labels and play counter. -->
+    <div class="card" id="top-hero" style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;padding:12px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
+      <figure style="flex:0 0 190px;margin:0;max-width:100%">
+        <a href="comic-the-financing-cycle_update-2026-10-27.webp"><img src="comic-the-financing-cycle_update-2026-10-27.webp" width="1024" height="1536" style="width:190px;height:auto;border-radius:8px;display:block" alt="Four-panel comic, updated October 27, 2026: patients searching for hope, a retail investor at a shareholder meeting, pancreatic cancer research, and a financing machine labeled Offerings + Warrants and Reverse Split that turns a retail investor's ownership into a smaller piece. Caption: Greed is good? Not when people are dying. Am I imagining this?"></a>
+        <figcaption style="font-size:11px;line-height:1.35;margin-top:4px;color:#0b2540">The case in four panels (updated October 27, 2026; not part of any court filing; an illustrative question, not a finding of intent). <a style="color:#1f4e79" href="comic-the-financing-cycle.jpg">Original as filed</a></figcaption>
+      </figure>
+      <div style="flex:1 1 300px;min-width:260px">
+        <div id="listen-top" style="border:1px solid #9db7d3;border-radius:10px;background:#ffffff;padding:6px 10px;margin:0 0 10px">
+          <p style="font-size:14px;font-weight:700;margin:0;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-audio"/></svg> Listen to the complaint <span style="font-weight:400;font-size:13px">&middot; October 19, 2026 version (ECF No. 41) &middot; 1 hour 30 minutes</span></p>
+          <audio id="bigAudio" controls preload="none" style="width:100%;max-width:400px;height:30px" src="files/audio/2026-10-19_ECF-41_first-amended-verified-complaint_computer-generated-reading.mp3"></audio>
+          <p style="font-size:11px;margin:2px 0 0;color:#0b2540">Computer-generated reading. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-10-19_ECF-41_first-amended-verified-complaint-with-exhibits-1-25-and-summonses_as-filed.pdf" target="_blank" rel="noopener">Read the October 19 PDF</a>. The Court accepted the October 31, 2026 version: <a style="color:#1f4e79" href="#ecf46">ECF No. 46, Exhibit A</a>.</p>
+          <p class="playCount" style="font-size:12px;font-weight:700;margin:2px 0 0;color:#0b2540" hidden></p>
+        </div>
+        <a id="news-nov7" href="/news-2026-11-07.html" aria-label="Latest News: Theriva responds; our reply filed. Click for a summary and to hear our side." style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:12px;background:#1f4e79;color:#fff;text-decoration:none;margin:0 0 10px">
+          <svg viewBox="0 0 24 24" width="36" height="36" style="flex:0 0 36px;color:#fff" aria-hidden="true"><use href="#c-news"/></svg>
+          <span style="display:block;color:#fff"><span style="display:block;font-size:19px;font-weight:800;line-height:1.2">Latest News</span><span style="display:block;font-size:15px;line-height:1.35">Theriva responds &middot; our reply filed November 7, 2026 &middot; click for a summary and to hear our side</span></span>
+        </a>
+        <div id="listen-reply" style="border:1px solid #9db7d3;border-radius:10px;background:#ffffff;padding:6px 10px;margin:0 0 10px">
+          <p style="font-size:15px;font-weight:700;margin:0;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-audio"/></svg> Hear our side: the reply <span style="font-weight:400;font-size:13px">&middot; filed November 7, 2026 (<a style="color:#1f4e79" href="#ecf52">ECF No. 52</a>) &middot; about 50 minutes</span></p>
+          <audio controls preload="none" style="width:100%;max-width:440px;height:32px" src="files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
+          <p style="font-size:11px;margin:2px 0 0;color:#0b2540">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The filed document is the official version. <a style="color:#1f4e79" href="files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">Read the reply (PDF)</a></p>
+        </div>
+      </div>
     </div>
     <script>
       (function(){var b=document.getElementById('bigPlay'),a=document.getElementById('bigAudio'),i=document.getElementById('bigPlayIcon');if(!b||!a)return;
@@ -244,18 +256,6 @@
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-41_first-amended/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f=fac-audio',{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
     </script>
-    <!-- BUILT 2026-11-07 · news-1b: Latest News icon on the home page. Mark 11/7: "as an icon that thehy can click "Latest News" Theriva responds and then they can click and get a summary". Plaintiff's summary; ECF 50 not posted (ECF 44). -->
-    <a id="news-nov7" href="/news-2026-11-07.html" aria-label="Latest News: Theriva responds. Click for a summary." style="display:flex;align-items:center;gap:14px;padding:12px 16px;border:2px solid #1f4e79;border-radius:12px;background:#1f4e79;color:#fff;text-decoration:none;margin:12px 0">
-      <svg viewBox="0 0 24 24" width="44" height="44" style="flex:0 0 44px;color:#fff" aria-hidden="true"><use href="#c-news"/></svg>
-      <span style="display:block;color:#fff"><span style="display:block;font-size:20px;font-weight:800;line-height:1.2">Latest News</span><span style="display:block;font-size:16px;line-height:1.35">Theriva responds &middot; our reply filed November 7, 2026 &middot; click for a summary and to hear our side</span></span>
-    </a>
-    <!-- Added 2026-11-07 · site-4g: Mark: "they need to hear our response so it should be next to their summary". Reply audio right under the Latest News tile, compact like the complaint card. -->
-    <div class="card" id="listen-reply" style="text-align:center;padding:6px 12px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
-      <p style="font-size:16px;font-weight:700;margin:2px 0 0;color:#0b2540">Hear our side: listen to the reply</p>
-      <p style="font-size:13px;margin:0 0 4px;color:#0b2540">Plaintiff&rsquo;s reply to Theriva&rsquo;s response &middot; filed November 7, 2026 (<a style="color:#1f4e79" href="#ecf52">ECF No. 52</a>) &middot; about 50 minutes</p>
-      <audio controls preload="none" style="width:100%;max-width:420px;height:32px" src="files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
-      <p style="font-size:11px;margin:4px 0 0;color:#0b2540">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The document filed with the Court is the official version. <a style="color:#1f4e79" href="files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">Read the reply (PDF)</a></p>
-    </div>
     <!-- Added 2026-11-02 · opinion-1a: link card to the approved opinion of Nov 2, 2026 (Mark: "approved"). -->
     <div class="card" id="opinion-nov2" style="padding:10px 14px;border:2px solid #1f4e79;background:#eef5fc;color:#0b2540;margin:0 0 12px">
       <p style="margin:0;font-size:17px;color:#0b2540"><svg class="ci" style="vertical-align:-4px;color:#1f4e79"><use href="#c-opinion"/></svg> <b><a style="color:#1f4e79" href="/opinion-2026-11-02">What is happening at Theriva? An opinion</a></b> &middot; November 2, 2026 &middot; <span style="font-size:14px">SYN-004 sold for $350,000 upfront; 500 million shares on the November 18 ballot; each fact linked to Theriva&rsquo;s own filings.</span></p>
@@ -354,12 +354,7 @@
     <div class="card hero" id="glance">
       <h2>The case at a glance</h2>
       <div class="gist">
-        <!-- comic-update-1b 2026-10-27 (Mark: "this is the new comic that shows the patients getting more sick please apply it to the site"). 10-27 version shown; 10-12 version and filed original stay on the site, linked. -->
-        <!-- comic-update-1a 2026-10-12 (Mark: "I created an update comic please change on the nejmehvstheriva.com site"). Updated version shown here; the filed original (comic-the-financing-cycle.jpg) stays on the site unchanged and is linked in the caption. -->
-        <figure>
-          <a href="comic-the-financing-cycle_update-2026-10-27.webp"><img src="comic-the-financing-cycle_update-2026-10-27.webp" width="1024" height="1536" alt="Four-panel comic, updated October 27, 2026: patients searching for hope, a retail investor at a shareholder meeting, pancreatic cancer research, and a financing machine labeled Offerings + Warrants and Reverse Split that turns a retail investor's ownership into a smaller piece. Caption: Greed is good? Not when people are dying. Am I imagining this?"></a>
-          <figcaption>The whole scenario in four panels. Updated October 27, 2026; this version is not part of any court filing. Illustrative question, not a finding of intent. <a href="comic-the-financing-cycle.jpg">The original, as filed in the plaintiff's Supplemental Exhibits SA–SP.</a> <a href="comic-the-financing-cycle_update-2026-10-12.jpg">The October 12 version.</a></figcaption>
-        </figure>
+        <!-- top-1a 2026-11-07: the comic moved up into #top-hero (Mark). -->
         <figure>
           <a href="graphic-whale-warrants-reverse-splits.jpg"><img src="graphic-whale-warrants-reverse-splits.jpg" width="1536" height="1024" alt="Black-and-white drawing: two giant mouths labeled Warrants and Reverse Splits close in on Shareholder Value, while a whale labeled Good News lies beached and a small figure points at Filings Gibberish."></a>
           <figcaption>Warrants and reverse splits closing in on shareholder value, while the good news washes up. From the plaintiff's Supplemental Exhibits SA–SP.</figcaption>
