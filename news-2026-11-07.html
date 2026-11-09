@@ -63,6 +63,7 @@ ul{padding-left:22px}li{margin:0 0 10px}
 <p><b>Listen to the reply</b> (about 50 minutes):</p>
 <audio controls preload="none" style="width:100%;max-width:560px" src="/files/audio/2026-11-07_ECF-52_reply_computer-generated-reading.mp3"></audio>
 <p class="playCountReply" style="font-size:14px;font-weight:700;margin:6px 0 0" hidden></p>
+<div class="shareRow" data-url="https://nejmehvstheriva.com/news-2026-11-07" data-text="Hear our side: the plaintiff&#39;s reply in Nejmeh v. Theriva Biologics (ECF No. 52)"></div>
 <p style="font-size:14px;color:var(--ink3)">Computer-generated reading, recorded just before the final wording changes, so a few words differ in places. The document filed with the Court is the official version: <a href="/files/2026-11-07_ECF-52/ECF-52_reply-in-support-of-ECF-42_as-submitted.pdf" target="_blank" rel="noopener">read the reply (PDF)</a> and <a href="/#ecf52">its exhibits</a>.</p>
 </div>
 <script>
@@ -73,5 +74,6 @@ ul{padding-left:22px}li{margin:0 0 10px}
         fetch(API+'/plays?f='+F).then(function(r){return r.json();}).then(show).catch(function(){});
         document.addEventListener('play',function(e){if(sent||!e.target||!/ECF-52_reply/.test(e.target.currentSrc||e.target.src||''))return;sent=true;
           fetch(API+'/play?f='+F,{method:'POST'}).then(function(r){return r.json();}).then(show).catch(function(){});},true);})();
-</script></body>
+</script>
+<script src="/share.js" defer></script></body>
 </html>
