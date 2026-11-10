@@ -8,8 +8,15 @@
     x:'<path d="M4 4l16 16 M20 4L4 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>',
     fb:'<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" fill="currentColor"/>',
     mail:'<path d="M3 6h18v12H3z M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>',
-    link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1 M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+    link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1 M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+    save:'<path d="M12 3v12 M7 10l5 5 5-5 M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
   };
+  /* share-1b 2026-11-09 (Mark: "create shares for the graphics"): a row with data-img shares the PICTURE itself on a phone
+     (the phone's own Share sheet, when it can take files) and adds a Save image button. */
+  function imgFile(src){
+    return fetch(src).then(function(r){return r.blob();}).then(function(b){
+      var name=src.split('/').pop(); return new File([b],name,{type:b.type||'image/jpeg'});});
+  }
   function btn(icon,label,href){
     var el=document.createElement(href?'a':'button');
     if(href){el.href=href;el.target='_blank';el.rel='noopener';}else{el.type='button';}
@@ -22,9 +29,17 @@
     var url=row.getAttribute('data-url')||location.href, text=row.getAttribute('data-text')||document.title;
     var u=encodeURIComponent(url), t=encodeURIComponent(text);
     row.style.cssText+='display:flex;flex-wrap:wrap;align-items:center;margin:6px 0 0';
+    var img=row.getAttribute('data-img');
     if(navigator.share){
       var s=btn('share','Share');
-      s.addEventListener('click',function(){navigator.share({title:text,text:text,url:url}).catch(function(){});});
+      s.addEventListener('click',function(){
+        if(img && navigator.canShare){
+          imgFile(img).then(function(f){
+            if(navigator.canShare({files:[f]})){return navigator.share({files:[f],title:text,text:text+' '+url});}
+            return navigator.share({title:text,text:text,url:url});
+          }).catch(function(){});
+        } else { navigator.share({title:text,text:text,url:url}).catch(function(){}); }
+      });
       row.appendChild(s);
     }
     row.appendChild(btn('x','X','https://twitter.com/intent/tweet?text='+t+'&url='+u));
@@ -37,6 +52,10 @@
       else{prompt('Copy this link:',url);}
     });
     row.appendChild(c);
+    if(img){
+      var sv=btn('save','Save image',img); sv.removeAttribute('target'); sv.setAttribute('download',img.split('/').pop());
+      row.appendChild(sv);
+    }
   }
   function go(){document.querySelectorAll('.shareRow').forEach(build);}
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',go);}else{go();}
